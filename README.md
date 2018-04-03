@@ -12,23 +12,23 @@ category will appear on a screen and when user is ready to learn  an answer he/s
 same category or go back to a main menu to choose different category.
 
 ## Must have features:
-> Main menu with different categories 
-> Question display
-> Answer display
-> Button to reveal an answer
-> Button to continue in the same category 
-> Button to go back to the main menu 
+*  Main menu with different categories   
+*  Question display  
+*  Answer display  
+*  Button to reveal an answer  
+*  Button to continue in the same category   
+*  Button to go back to the main menu   
 
 ## Nice to have features:
-> Hints(if requested)
-> Difficulty level options for each category.
+*  Hints(if requested)  
+*  Difficulty level options for each category.  
 
 ## Timeframe:
-> Main menu with different categories: 2 hours
-> Question display: 12 hours
-> Answer display: 12 hours
-> Button to reveal an answer: 1/2 hour
-> Button to continue in the same category: 1/2 hour
-> button to go back to the main menu: 1/2 hour
-> Hints: 8-10 hours
-> Difficulty level options: 4 hours 
+*  Main menu with different categories: 2 hours  
+*  Question display: 12 hours  
+*  Answer display: 12 hours  
+*  Button to reveal an answer: 1/2 hour  
+*  Button to continue in the same category: 1/2 hour  
+*  Button to go back to the main menu: 1/2 hour  
+*  Hints: 8-10 hours  
+*  Difficulty level options: 4 hours   
