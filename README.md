@@ -34,7 +34,13 @@ same category or go back to a main menu to choose different category.
 *  Button to continue in the same category: 1/2 hour  
 *  Button to go back to the main menu: 1/2 hour  
 *  Hints: 8-10 hours  
+
 *  Difficulty level options: 4 hours
 *  Score based system: 4 hours
 *  Timed Questions: 4 hours
 *  Multple Choice: 12+ hours
+*  Difficulty level options: 4 hours   
+<p align="center">
+<img src="./appDiagram.png" alt="Results" width="800px">
+</p>
+
