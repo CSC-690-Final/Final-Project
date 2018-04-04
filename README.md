@@ -44,3 +44,18 @@ same category or go back to a main menu to choose different category.
 <img src="./appDiagram.png" alt="Results" width="800px">
 </p>
 
+## Features Owners: 
+* Main Menu: Elina  
+* Question display: Mark
+* Answer display: Elina
+* Button to reveal an answer: Mark
+* Button to continue in the same category: Mark
+* Button to go back to the main menu: Mark
+* Hints: Elina
+* Difficulty level options: Elina
+* Score base system: Mark
+* Timed questions: Elina
+* Multiple choice: Mark
+### Total time per member:
+* Elina: 32 hours
+* Mark : 29.5 hours
