@@ -80,16 +80,16 @@ class ViewController: UIViewController {
     }
     
     // Example action - TODO: replace with yours
-    @IBAction func showPopupCentered(_ sender: AnyObject) {
+   /* @IBAction func showPopupCentered(_ sender: AnyObject) {
         self.showPopupWithStyle(CNPPopupStyle.centered)
     }
-    @IBAction func showPopupFormSheet(_ sender: AnyObject) {
+     @IBAction func showPopupFormSheet(_ sender: AnyObject) {
         self.showPopupWithStyle(CNPPopupStyle.actionSheet)
     }
     @IBAction func showPopupFullscreen(_ sender: AnyObject) {
         self.showPopupWithStyle(CNPPopupStyle.fullscreen)
     }
-    
+    */
     @IBAction func answerButton(_ sender: AnyObject) {
         self.showPopupWithStyle(CNPPopupStyle.centered)
     }

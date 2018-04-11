@@ -22,74 +22,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKU-Tb-ti7">
-                                <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="y9s-9c-po0"/>
-                                </constraints>
-                                <state key="normal" title="Show Popup Centered">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-2G-N7P">
+                                <rect key="frame" x="162" y="339.5" width="51" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="showPopupCentered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4b2-pa-xRz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-yJ-2uF">
-                                <rect key="frame" x="87.5" y="280.5" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.40074053406715393" green="0.80121159553527832" blue="0.99894118309020996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="C5k-h4-USI"/>
-                                </constraints>
-                                <state key="normal" title="Show Popup Formsheet">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="showPopupFormSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4F-2F-ffX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-Nv-TKo">
-                                <rect key="frame" x="87.5" y="356.5" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="MGO-TW-qFv"/>
-                                </constraints>
-                                <state key="normal" title="Show Popup Fullscreen">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="showPopupFullscreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXg-Ml-1Ep"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                              Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-tM-Kg6" propertyAccessControl="none">
-                                <rect key="frame" x="16" y="72" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-2G-N7P">
-                                <rect key="frame" x="162" y="441" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Answer"/>
                                 <connections>
                                     <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYE-J1-9Sa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-HL-kby">
+                                <rect key="frame" x="152" y="72" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-Vz-59T">
+                                <rect key="frame" x="126" y="479.5" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.11080055683851242" green="0.55814564228057861" blue="0.97921496629714966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Exit to Main Menu">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text belongs here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9H-md-PDK">
+                                <rect key="frame" x="91" y="172" width="207" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hKU-Tb-ti7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="58O-g0-3t2"/>
-                            <constraint firstItem="Xl6-tM-Kg6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8z5-r2-2yP"/>
-                            <constraint firstItem="Xl6-tM-Kg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EPb-w5-8p6"/>
-                            <constraint firstItem="ZmL-yJ-2uF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8f-da-J6j"/>
-                            <constraint firstItem="hKU-Tb-ti7" firstAttribute="top" secondItem="ZmL-yJ-2uF" secondAttribute="bottom" constant="8" id="LVn-d9-qZW"/>
-                            <constraint firstItem="Xl6-tM-Kg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Vlq-QV-JCU"/>
-                            <constraint firstItem="hKU-Tb-ti7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpM-ax-66U"/>
-                            <constraint firstItem="eNb-Nv-TKo" firstAttribute="top" secondItem="hKU-Tb-ti7" secondAttribute="bottom" constant="8" id="e6u-K7-eHJ"/>
-                            <constraint firstItem="eNb-Nv-TKo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydI-S7-Z3z"/>
+                            <constraint firstItem="Jdp-Vz-59T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="13o-Fc-owo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jdp-Vz-59T" secondAttribute="trailing" constant="111" id="9cR-9v-4Cv"/>
+                            <constraint firstItem="3Py-2G-N7P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="146" id="BJt-9q-cLj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eNt-HL-kby" secondAttribute="trailing" constant="136" id="Fhq-GB-Dl5"/>
+                            <constraint firstItem="Jdp-Vz-59T" firstAttribute="top" secondItem="3Py-2G-N7P" secondAttribute="bottom" constant="110" id="OEh-Pa-4pY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Py-2G-N7P" secondAttribute="trailing" constant="146" id="il7-CU-pu9"/>
+                            <constraint firstItem="q9H-md-PDK" firstAttribute="top" secondItem="eNt-HL-kby" secondAttribute="bottom" constant="79" id="jhS-ls-nPf"/>
+                            <constraint firstItem="eNt-HL-kby" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="nIN-BK-gf9"/>
+                            <constraint firstItem="eNt-HL-kby" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nlD-I2-H8h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q9H-md-PDK" secondAttribute="trailing" constant="61" id="tA1-jG-BSq"/>
+                            <constraint firstItem="Jdp-Vz-59T" firstAttribute="top" secondItem="3Py-2G-N7P" secondAttribute="bottom" constant="110" id="vbm-tD-153"/>
+                            <constraint firstItem="3Py-2G-N7P" firstAttribute="top" secondItem="q9H-md-PDK" secondAttribute="bottom" constant="147" id="ypi-Zv-Xmw"/>
+                            <constraint firstItem="q9H-md-PDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="zKu-wr-BlP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="anH-bf-SbA"/>
