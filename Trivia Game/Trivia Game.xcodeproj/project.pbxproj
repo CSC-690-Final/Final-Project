@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221232075FC06002119F3 /* AppDelegate.swift */; };
-		CF7221262075FC06002119F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221252075FC06002119F3 /* ViewController.swift */; };
+		CF7221262075FC06002119F3 /* QuestionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */; };
 		CF7221292075FC06002119F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7221272075FC06002119F3 /* Main.storyboard */; };
 		CF72212B2075FC06002119F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF72212A2075FC06002119F3 /* Assets.xcassets */; };
 		CF72212E2075FC06002119F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		CF7221202075FC06002119F3 /* Trivia Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7221232075FC06002119F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF7221252075FC06002119F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreenViewController.swift; sourceTree = "<group>"; };
 		CF7221282075FC06002119F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF72212A2075FC06002119F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF72212D2075FC06002119F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CF7221232075FC06002119F3 /* AppDelegate.swift */,
-				CF7221252075FC06002119F3 /* ViewController.swift */,
+				CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */,
 				CF7221272075FC06002119F3 /* Main.storyboard */,
 				CF72212A2075FC06002119F3 /* Assets.xcassets */,
 				CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */,
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7221262075FC06002119F3 /* ViewController.swift in Sources */,
+				CF7221262075FC06002119F3 /* QuestionScreenViewController.swift in Sources */,
 				CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */,
 				CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */,
 			);
