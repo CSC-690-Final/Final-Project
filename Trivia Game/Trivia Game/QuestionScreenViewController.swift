@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         
         button.backgroundColor = UIColor.blue  //(colorLiteralRed: 0.46, green: 0.8, blue: 1.0, alpha: 1.0)
         
+        performSegue(withIdentifier: "answerSubmitted", sender: self)
+        
         button.layer.cornerRadius = 4;
         button.selectionHandler = { (button) -> Void in
             self.popupController?.dismiss(animated: true)
