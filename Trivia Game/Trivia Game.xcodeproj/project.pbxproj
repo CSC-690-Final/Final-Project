@@ -15,6 +15,9 @@
 		CF7221392075FC07002119F3 /* Trivia_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221382075FC07002119F3 /* Trivia_GameTests.swift */; };
 		CF7221442075FC07002119F3 /* Trivia_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221432075FC07002119F3 /* Trivia_GameUITests.swift */; };
 		CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8CED05207D7E0800C8226D /* CNPPopupController.m */; };
+		EC4984822086A97C007C0445 /* AnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */; };
+		EC4984862086AB3D007C0445 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */; };
+		EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		CF8CED05207D7E0800C8226D /* CNPPopupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = SOURCE_ROOT; };
 		CF8CED07207D7E2A00C8226D /* CNPPopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		CF8CED08207D7F8700C8226D /* Trivia Game-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trivia Game-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerScreenViewController.swift; sourceTree = "<group>"; };
+		EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		EC4984872086AE11007C0445 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 		CF7221222075FC06002119F3 /* Trivia Game */ = {
 			isa = PBXGroup;
 			children = (
+				EC4984872086AE11007C0445 /* CategoryCell.swift */,
+				EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */,
 				CF7221232075FC06002119F3 /* AppDelegate.swift */,
 				CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */,
+				EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */,
 				CF7221272075FC06002119F3 /* Main.storyboard */,
 				CF72212A2075FC06002119F3 /* Assets.xcassets */,
 				CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */,
@@ -267,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4984822086A97C007C0445 /* AnswerScreenViewController.swift in Sources */,
 				CF7221262075FC06002119F3 /* QuestionScreenViewController.swift in Sources */,
+				EC4984862086AB3D007C0445 /* CategoryTableViewController.swift in Sources */,
 				CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */,
 				CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */,
+				EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
