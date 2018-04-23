@@ -1,13 +1,9 @@
 //
 //  ViewController.swift
-//  CNPPopupControllerExampleSwift
+//  CNPPopupControllerE
 //
-//  Created by Carson Perrotti on 2016-01-14.
-//  Copyright © 2016 Carson Perrotti. All rights reserved.
 //
 
-
-// A big thank you to Alessandro Miliucci - lifeisfoo@gmail.com for helping with the swift example.
 
 import UIKit
 
@@ -39,7 +35,8 @@ class ViewController: UIViewController {
         
         button.backgroundColor = UIColor.blue  //(colorLiteralRed: 0.46, green: 0.8, blue: 1.0, alpha: 1.0)
         
-        performSegue(withIdentifier: "answerSubmitted", sender: self)
+        //performSegue(withIdentifier: "answerSubmitted", sender: self)
+        
         
         button.layer.cornerRadius = 4;
         button.selectionHandler = { (button) -> Void in
@@ -74,11 +71,14 @@ class ViewController: UIViewController {
         popupController.theme.popupStyle = popupStyle
         // LFL added settings for custom color and blur
         popupController.theme.maskType = .custom
-        popupController.theme.customMaskColor = UIColor.red
+        popupController.theme.customMaskColor = UIColor.clear
         popupController.theme.blurEffectAlpha = 1.0
         popupController.delegate = self
         self.popupController = popupController
         popupController.present(animated: true)
+    
+           performSegue(withIdentifier: "answerSubmitted", sender: self)
+        
     }
     
     // Example action - TODO: replace with yours
