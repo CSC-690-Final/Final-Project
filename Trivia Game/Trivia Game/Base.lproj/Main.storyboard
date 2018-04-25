@@ -71,8 +71,7 @@
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdu-lW-MUU"/>
-                                    <action selector="submittedA:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="1uX-GB-Dqt"/>
+                                    <action selector="pressedA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfv-lA-yAC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-uA-EcV">
@@ -87,8 +86,7 @@
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxa-E0-eFT"/>
-                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdJ-Zl-M0v"/>
+                                    <action selector="pressedB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="717-pD-2Ss"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lj-v8-QrE">
@@ -103,7 +101,7 @@
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l84-IL-Ilo"/>
+                                    <action selector="pressedC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPx-fc-hRP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-R8-ETo">
@@ -118,7 +116,7 @@
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnZ-Jt-AU4"/>
+                                    <action selector="pressedD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uh-NI-UXH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,18 +148,22 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="anH-bf-SbA"/>
                     <connections>
                         <outlet property="answerA" destination="3Py-2G-N7P" id="AiH-JE-MlQ"/>
+                        <outlet property="answerB" destination="fD5-uA-EcV" id="Os9-aY-DrW"/>
+                        <outlet property="answerC" destination="6lj-v8-QrE" id="uYE-ed-mhU"/>
+                        <outlet property="answerD" destination="LoN-R8-ETo" id="hYo-rU-b06"/>
+                        <outlet property="categoryDisplay" destination="eNt-HL-kby" id="pfs-6D-EGC"/>
                         <outlet property="questionDisplay" destination="WPB-Mw-Ip4" id="PI8-Zh-x7y"/>
-                        <segue destination="cRO-ro-yLZ" kind="presentation" identifier="answerSubmitted" id="zy4-zf-kmb"/>
+                        <segue destination="cRO-ro-yLZ" kind="presentation" identifier="submittedAnswer" id="S3H-cr-Trg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="662.77173913043487"/>
         </scene>
-        <!--View Controller-->
+        <!--Answer View Controller-->
         <scene sceneID="3gf-6W-K5G">
             <objects>
-                <viewController id="cRO-ro-yLZ" customClass="ViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cRO-ro-yLZ" customClass="answerViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5mt-w6-znt"/>
                         <viewControllerLayoutGuide type="bottom" id="A3i-Ry-TYS"/>
@@ -229,6 +231,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="9e5-Un-nE8" secondAttribute="trailing" constant="18" id="wYF-kw-brM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerDisplay" destination="9e5-Un-nE8" id="QKL-yN-E65"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvI-xM-tDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,7 +299,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zy4-zf-kmb"/>
+        <segue reference="S3H-cr-Trg"/>
         <segue reference="QJu-DQ-UpX"/>
         <segue reference="Jfr-C0-2cm"/>
     </inferredMetricsTieBreakers>
