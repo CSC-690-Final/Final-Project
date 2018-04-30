@@ -30,14 +30,15 @@ class CategoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selected = categories[indexPath.row]
-        performSegue(withIdentifier: "questionTransition", sender: self)
+        performSegue(withIdentifier: "categoryQuestion", sender: self)
     }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewController {
             destination.category = selected
         }
     }
- */
-    
 }
+ 
+    
+

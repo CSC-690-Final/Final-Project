@@ -22,12 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerD: UIButton!
     
     var submit = ""
+    var category: String?
    
     //-------------//
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryDisplay.text = "Current Category"
+        categoryDisplay.text = category
         questionDisplay.text = "Question goes here"
         answerA.setTitle("A", for: .normal)
         answerB.setTitle("B", for: .normal)
