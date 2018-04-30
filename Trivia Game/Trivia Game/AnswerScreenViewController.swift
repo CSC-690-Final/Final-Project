@@ -9,6 +9,7 @@
 import UIKit
 class answerViewController: UIViewController {
     //-----//
+
     var answer:String = ""
     
     @IBOutlet weak var answerDisplay: UILabel?

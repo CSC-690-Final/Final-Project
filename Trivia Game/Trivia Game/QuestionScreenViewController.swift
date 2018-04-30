@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     var submit = ""
     var category: String?
-   
+    //let generalQuestions = GeneralKnowledgeQuestions()
     //-------------//
     
     override func viewDidLoad() {

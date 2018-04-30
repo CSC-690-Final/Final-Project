@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
     
-    var categories: [String] = ["Category1","Category2","Category3"]
+    var categories: [String] = ["General Knowledge ","History","Movies","Literature","Astronomy"]
     var selected: String?
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
