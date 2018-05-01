@@ -77,13 +77,13 @@ class QuestionViewController: UIViewController {
     
     //-------------//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let vc = segue.destination as! answerViewController
+        let vc = segue.destination as? answerViewController
         
         if self.submit == correctAnswer {
-            vc.answer = "Correct! The answer was \(self.submit)"
+            vc?.answer = "Correct! The answer was \(self.submit)"
         }
         else {
-            vc.answer = "Sorry! The actual answer was \(correctAnswer)"
+            vc?.answer = "Sorry! The actual answer was \(correctAnswer)"
         }
     }
 

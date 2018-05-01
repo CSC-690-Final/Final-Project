@@ -29,8 +29,8 @@ class answerViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let vc = segue.destination as! QuestionViewController
-        vc.questionNumber += 1
+        let vc = segue.destination as? QuestionViewController
+        vc?.questionNumber += 1
         
     }
     
