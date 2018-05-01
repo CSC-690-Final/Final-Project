@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -199,7 +199,7 @@
                                     <color key="titleColor" red="0.97974326649999999" green="1" blue="0.99021732080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Jfr-C0-2cm"/>
+                                    <action selector="nextQuestion:" destination="cRO-ro-yLZ" eventType="touchUpInside" id="KLK-Yq-PKv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnC-px-yJC">
@@ -233,6 +233,7 @@
                     </view>
                     <connections>
                         <outlet property="answerDisplay" destination="9e5-Un-nE8" id="QKL-yN-E65"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="backToQuestion" id="KLe-Eh-HGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvI-xM-tDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,6 +280,24 @@
             </objects>
             <point key="canvasLocation" x="1459" y="1434"/>
         </scene>
+        <!--Db View Controller-->
+        <scene sceneID="uPI-et-20M">
+            <objects>
+                <viewController id="Ex8-ul-9Ne" customClass="dbViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YpG-g0-zCU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pfy-p7-7sp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lkf-rP-YGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdj-Ff-fea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="-78"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="adN-yy-Zn5">
             <objects>
@@ -299,8 +318,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S3H-cr-Trg"/>
-        <segue reference="QJu-DQ-UpX"/>
-        <segue reference="Jfr-C0-2cm"/>
+        <segue reference="hsM-Wd-8Xc"/>
+        <segue reference="KLe-Eh-HGL"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Questions" representedClassName=".Question" syncable="YES">
+        <attribute name="a" attributeType="String" syncable="YES"/>
+        <attribute name="b" attributeType="String" syncable="YES"/>
+        <attribute name="c" attributeType="String" syncable="YES"/>
+        <attribute name="correctAnswer" attributeType="String" syncable="YES"/>
+        <attribute name="d" attributeType="String" syncable="YES"/>
+        <attribute name="question" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Questions" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>

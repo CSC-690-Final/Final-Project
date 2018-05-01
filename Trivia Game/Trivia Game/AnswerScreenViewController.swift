@@ -24,5 +24,15 @@ class answerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextQuestion(_ sender: Any) {
+        performSegue(withIdentifier: "backToQuestion", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let vc = segue.destination as! QuestionViewController
+        vc.questionNumber += 1
+        
+    }
+    
 }
 

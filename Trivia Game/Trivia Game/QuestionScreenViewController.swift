@@ -6,8 +6,9 @@
 
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class QuestionViewController: UIViewController {
     //-------------//
     @IBOutlet weak var questionDisplay: UILabel!
  
@@ -21,18 +22,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var answerD: UIButton!
     
+  
     var submit = ""
-   
+    var questionNumber = 0
+    var correctAnswer = ""
     //-------------//
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //fetches the row from the Questions data model
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let questionFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Questions")
+        questionFetch.fetchLimit = 1
+        //row is selected based on the id of the question (starting at id [0] represnting the first question)
+        questionFetch.predicate = NSPredicate(format: "id = %d", questionNumber)
+        let question = try! managedContext.fetch(questionFetch)
+        //current question represents the fecthed values of the current row slected
+        let currentQuestion: Questions = question.first as! Questions
+        
         categoryDisplay.text = "Current Category"
-        questionDisplay.text = "Question goes here"
-        answerA.setTitle("A", for: .normal)
-        answerB.setTitle("B", for: .normal)
-        answerC.setTitle("C", for: .normal)
-        answerD.setTitle("D", for: .normal)
+        questionDisplay.text = currentQuestion.question
+        answerA.setTitle(currentQuestion.a, for: .normal)
+        answerB.setTitle(currentQuestion.b, for: .normal)
+        answerC.setTitle(currentQuestion.c, for: .normal)
+        answerD.setTitle(currentQuestion.d, for: .normal)
+        correctAnswer = currentQuestion.correctAnswer!
     }
     
 
@@ -61,8 +78,13 @@ class ViewController: UIViewController {
     //-------------//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let vc = segue.destination as! answerViewController
-        vc.answer = self.submit
         
+        if self.submit == correctAnswer {
+            vc.answer = "Correct! The answer was \(self.submit)"
+        }
+        else {
+            vc.answer = "Sorry! The actual answer was \(correctAnswer)"
+        }
     }
 
     override func didReceiveMemoryWarning() {
