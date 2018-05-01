@@ -25,6 +25,8 @@
 		EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 		EC9C186C2096DFDB00ADDBA4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C186B2096DFDB00ADDBA4 /* Question.swift */; };
 		EC9C186E2096E22F00ADDBA4 /* GeneralKnowledgeQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C186D2096E22F00ADDBA4 /* GeneralKnowledgeQuestions.swift */; };
+		EC9C18702098384400ADDBA4 /* HistoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C186F2098384400ADDBA4 /* HistoryQuestions.swift */; };
+		EC9C187220983E1B00ADDBA4 /* LiteratureQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C187120983E1B00ADDBA4 /* LiteratureQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		EC4984872086AE11007C0445 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		EC9C186B2096DFDB00ADDBA4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EC9C186D2096E22F00ADDBA4 /* GeneralKnowledgeQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneralKnowledgeQuestions.swift; path = "Trivia Game/GeneralKnowledgeQuestions.swift"; sourceTree = SOURCE_ROOT; };
+		EC9C186F2098384400ADDBA4 /* HistoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryQuestions.swift; sourceTree = "<group>"; };
+		EC9C187120983E1B00ADDBA4 /* LiteratureQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteratureQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */,
 				EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */,
 				EC9C186D2096E22F00ADDBA4 /* GeneralKnowledgeQuestions.swift */,
+				EC9C187120983E1B00ADDBA4 /* LiteratureQuestions.swift */,
+				EC9C186F2098384400ADDBA4 /* HistoryQuestions.swift */,
 				CF7221272075FC06002119F3 /* Main.storyboard */,
 				CF72212A2075FC06002119F3 /* Assets.xcassets */,
 				CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */,
@@ -296,6 +302,8 @@
 				EC4984862086AB3D007C0445 /* CategoryTableViewController.swift in Sources */,
 				CF2BA9AE208FF80F0063792A /* AnswerScreenViewController.swift in Sources */,
 				EC9C186E2096E22F00ADDBA4 /* GeneralKnowledgeQuestions.swift in Sources */,
+				EC9C187220983E1B00ADDBA4 /* LiteratureQuestions.swift in Sources */,
+				EC9C18702098384400ADDBA4 /* HistoryQuestions.swift in Sources */,
 				CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */,
 				CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */,
 				EC9C186C2096DFDB00ADDBA4 /* Question.swift in Sources */,
