@@ -10,7 +10,8 @@ import UIKit
 class answerViewController: UIViewController {
     //-----//
     var answer:String = ""
-    
+    var category:String = ""
+    var questionNumber:Int = 0
     @IBOutlet weak var answerDisplay: UILabel?
     
     //-----//
@@ -30,7 +31,9 @@ class answerViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let vc = segue.destination as? QuestionViewController
-        vc?.questionNumber += 1
+        questionNumber += 1
+        vc?.questionNumber = self.questionNumber
+        vc?.category = self.category
         
     }
     

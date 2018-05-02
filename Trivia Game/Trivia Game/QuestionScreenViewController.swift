@@ -22,14 +22,17 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var answerD: UIButton!
     
-  
+    var category:String?
     var submit = ""
     var questionNumber = 0
     var correctAnswer = ""
+   
     //-------------//
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+ 
         
         //fetches the row from the Questions data model
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -37,13 +40,16 @@ class QuestionViewController: UIViewController {
         
         let questionFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Questions")
         questionFetch.fetchLimit = 1
-        //row is selected based on the id of the question (starting at id [0] represnting the first question)
-        questionFetch.predicate = NSPredicate(format: "id = %d", questionNumber)
+        //row is selected based on the id of the question (starting at id [0] representing the first question)
+        let categoryPredicate = NSPredicate(format: "category = %@", category!)
+        let questionIDPredicate = NSPredicate(format: "id = %d", questionNumber)
+        let searchPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, questionIDPredicate])
+        questionFetch.predicate = searchPredicate
         let question = try! managedContext.fetch(questionFetch)
-        //current question represents the fecthed values of the current row slected
+        //current question represents the fecthed values of the current row selected
         let currentQuestion: Questions = question.first as! Questions
         
-        categoryDisplay.text = "Current Category"
+        categoryDisplay.text = category
         questionDisplay.text = currentQuestion.question
         answerA.setTitle(currentQuestion.a, for: .normal)
         answerB.setTitle(currentQuestion.b, for: .normal)
@@ -80,11 +86,13 @@ class QuestionViewController: UIViewController {
         let vc = segue.destination as? answerViewController
         
         if self.submit == correctAnswer {
-            vc?.answer = "Correct! The answer was \(self.submit)"
+            vc?.answer = "Correct! The answer is \(self.submit)"
         }
         else {
-            vc?.answer = "Sorry! The actual answer was \(correctAnswer)"
+            vc?.answer = "Sorry! The actual answer is \(self.correctAnswer)"
         }
+        vc?.category = self.category!
+        vc?.questionNumber = self.questionNumber
     }
 
     override func didReceiveMemoryWarning() {

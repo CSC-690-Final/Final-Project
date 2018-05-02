@@ -4,12 +4,13 @@
         <attribute name="a" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="b" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="c" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="correctAnswer" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="d" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Questions" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Questions" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>
