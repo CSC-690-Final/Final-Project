@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-HL-kby">
-                                <rect key="frame" x="136" y="72" width="143" height="44"/>
+                                <rect key="frame" x="136" y="28" width="143" height="44"/>
                                 <color key="backgroundColor" red="0.69205391839999997" green="0.69205391839999997" blue="0.69205391839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1J3-mP-sya"/>
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Display" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPB-Mw-Ip4">
-                                <rect key="frame" x="18" y="130" width="378" height="152"/>
+                                <rect key="frame" x="18" y="86" width="378" height="196"/>
                                 <color key="backgroundColor" red="0.69205391839999997" green="0.69205391839999997" blue="0.69205391839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="378" id="71W-5u-DTN"/>
@@ -179,7 +179,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Text Display" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e5-Un-nE8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Text Display" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e5-Un-nE8">
                                 <rect key="frame" x="38" y="89" width="338" height="300"/>
                                 <color key="backgroundColor" red="0.79913511270000004" green="0.79913511270000004" blue="0.79913511270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -325,7 +325,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eBP-lS-Eyb"/>
-        <segue reference="cCk-V5-nS6"/>
+        <segue reference="hsM-Wd-8Xc"/>
+        <segue reference="wdy-Wd-9Pj"/>
     </inferredMetricsTieBreakers>
 </document>
