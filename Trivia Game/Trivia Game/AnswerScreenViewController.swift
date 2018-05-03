@@ -12,12 +12,15 @@ class answerViewController: UIViewController {
     var answer:String = ""
     var category:String = ""
     var questionNumber:Int = 0
+    var currentScore:Int = 0
     @IBOutlet weak var answerDisplay: UILabel?
+    @IBOutlet weak var score: UILabel?
     
     //-----//
     override func viewDidLoad() {
         super.viewDidLoad()
         answerDisplay?.text = answer
+        score?.text = String(currentScore)
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,7 +37,7 @@ class answerViewController: UIViewController {
         questionNumber += 1
         vc?.questionNumber = self.questionNumber
         vc?.category = self.category
-        
+        vc?.currentScore = self.currentScore
     }
     
 }

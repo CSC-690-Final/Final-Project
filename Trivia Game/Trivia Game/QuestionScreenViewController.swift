@@ -23,6 +23,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var answerD: UIButton!
     
     var category:String?
+    var currentScore:Int = 0
     var submit = ""
     var questionNumber = 0
     var correctAnswer = ""
@@ -40,7 +41,7 @@ class QuestionViewController: UIViewController {
         
         let questionFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Questions")
         questionFetch.fetchLimit = 1
-        //row is selected based on the id of the question (starting at id [0] representing the first question)
+        //row is selected based on the id of the question (starting at id [0] representing the first question and the selecedd category)
         let categoryPredicate = NSPredicate(format: "category = %@", category!)
         let questionIDPredicate = NSPredicate(format: "id = %d", questionNumber)
         let searchPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, questionIDPredicate])
@@ -60,39 +61,82 @@ class QuestionViewController: UIViewController {
     
 
     @IBAction func pressedA(_ sender: Any) {
+        
         self.submit = self.answerA.currentTitle!
-        performSegue(withIdentifier: "submittedAnswer", sender: self)
+        
+        if questionNumber == 9 {
+            performSegue(withIdentifier: "lastAnswer", sender: self)
+        }else{
+            performSegue(withIdentifier: "submittedAnswer", sender: self)
+        }
     }
  
     @IBAction func pressedB(_ sender: Any) {
+        
         self.submit = self.answerB.currentTitle!
-        performSegue(withIdentifier: "submittedAnswer", sender: self)
+        
+        if questionNumber == 9 {
+            performSegue(withIdentifier: "lastAnswer", sender: self)
+        }else{
+            performSegue(withIdentifier: "submittedAnswer", sender: self)
+        }
     }
     
     @IBAction func pressedC(_ sender: Any) {
+        
         self.submit = self.answerC.currentTitle!
-        performSegue(withIdentifier: "submittedAnswer", sender: self)
+        
+        if questionNumber == 9 {
+            performSegue(withIdentifier: "lastAnswer", sender: self)
+        }else{
+            performSegue(withIdentifier: "submittedAnswer", sender: self)
+        }
     }
     
     @IBAction func pressedD(_ sender: Any) {
+        
         self.submit = self.answerD.currentTitle!
-        performSegue(withIdentifier: "submittedAnswer", sender: self)
+        
+        if questionNumber == 9 {
+            performSegue(withIdentifier: "lastAnswer", sender: self)
+        }else{
+            performSegue(withIdentifier: "submittedAnswer", sender: self)
+        }
     }
     
     
     
     //-------------//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let vc = segue.destination as? answerViewController
+        
+        if let vc = segue.destination as? answerViewController {
         
         if self.submit == correctAnswer {
-            vc?.answer = "Correct! The answer is \(self.submit)"
+            vc.answer = "Correct! The answer is \(self.submit)"
+            currentScore += 1
         }
         else {
-            vc?.answer = "Sorry! The actual answer is \(self.correctAnswer)"
+            vc.answer = "Sorry! The actual answer is \(self.correctAnswer)"
         }
-        vc?.category = self.category!
-        vc?.questionNumber = self.questionNumber
+        vc.currentScore = self.currentScore
+        vc.category = self.category!
+        vc.questionNumber = self.questionNumber
+        }
+        
+        //---------//
+        
+        if let vc = segue.destination as? lastAnswerViewController {
+            
+            if self.submit == correctAnswer {
+                vc.answer = "Correct! The answer is \(self.submit)"
+                currentScore += 1
+            }
+            else {
+                vc.answer = "Sorry! The actual answer is \(self.correctAnswer)"
+            }
+            vc.currentScore = self.currentScore
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {

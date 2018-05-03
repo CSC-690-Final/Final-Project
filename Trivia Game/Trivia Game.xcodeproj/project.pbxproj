@@ -17,7 +17,6 @@
 		CF2BA9B1208FFA6A0063792A /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = CF7221232075FC06002119F3 /* AppDelegate.swift */; };
 		CF2BA9B2208FFA6E0063792A /* CategoryCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 		CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221232075FC06002119F3 /* AppDelegate.swift */; };
-		CF7221292075FC06002119F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7221272075FC06002119F3 /* Main.storyboard */; };
 		CF72212B2075FC06002119F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF72212A2075FC06002119F3 /* Assets.xcassets */; };
 		CF72212E2075FC06002119F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */; };
 		CF7221392075FC07002119F3 /* Trivia_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221382075FC07002119F3 /* Trivia_GameTests.swift */; };
@@ -27,6 +26,8 @@
 		CFFB9EE52098604700851344 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9EE42098604700851344 /* QuestionData.swift */; };
 		CFFB9EE72098615800851344 /* QuestionDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9EE62098615800851344 /* QuestionDataProperties.swift */; };
 		CFFB9EEC20986BCA00851344 /* AnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */; };
+		CFFD332F209B05C9007FBF3D /* LastAnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */; };
+		CFFD3330209B072C007FBF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7221272075FC06002119F3 /* Main.storyboard */; };
 		EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		CFCD20B12093A33F0065E433 /* triviaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = triviaModel.xcdatamodel; sourceTree = "<group>"; };
 		CFFB9EE42098604700851344 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		CFFB9EE62098615800851344 /* QuestionDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataProperties.swift; sourceTree = "<group>"; };
+		CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAnswerScreenViewController.swift; sourceTree = "<group>"; };
 		EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerScreenViewController.swift; path = "Trivia Game/AnswerScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		EC4984872086AE11007C0445 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				CF7221232075FC06002119F3 /* AppDelegate.swift */,
 				CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */,
 				EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */,
+				CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */,
 				CF7221272075FC06002119F3 /* Main.storyboard */,
 				CFCD20B02093A33F0065E433 /* triviaModel.xcdatamodeld */,
 				CF72212A2075FC06002119F3 /* Assets.xcassets */,
@@ -276,10 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2BA9B2208FFA6E0063792A /* CategoryCell.swift in Resources */,
+				CFFD3330209B072C007FBF3D /* Main.storyboard in Resources */,
 				CF2BA9B1208FFA6A0063792A /* AppDelegate.swift in Resources */,
 				CF72212E2075FC06002119F3 /* LaunchScreen.storyboard in Resources */,
 				CF72212B2075FC06002119F3 /* Assets.xcassets in Resources */,
-				CF7221292075FC06002119F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +321,7 @@
 				CF1F9E932091B4E50019C19A /* database.swift in Sources */,
 				CF1F9AB620990B87001C4A0A /* HistoryQuestions.swift in Sources */,
 				EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */,
+				CFFD332F209B05C9007FBF3D /* LastAnswerScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
