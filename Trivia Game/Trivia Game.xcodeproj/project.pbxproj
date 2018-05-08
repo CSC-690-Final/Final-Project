@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1F9AB420990B2E001C4A0A /* GeneralKnowledgeQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9AB320990B2E001C4A0A /* GeneralKnowledgeQuestions.swift */; };
+		CF1F9AB620990B87001C4A0A /* HistoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9AB520990B87001C4A0A /* HistoryQuestions.swift */; };
+		CF1F9AB820990BBE001C4A0A /* LiteratureQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9AB720990BBE001C4A0A /* LiteratureQuestions.swift */; };
+		CF1F9ABA20990C20001C4A0A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9AB920990C20001C4A0A /* Question.swift */; };
+		CF1F9ABD20990D68001C4A0A /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */; };
+		CF1F9AC020990D7E001C4A0A /* QuestionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */; };
+		CF1F9E932091B4E50019C19A /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9E922091B4E50019C19A /* database.swift */; };
+		CF2BA9B1208FFA6A0063792A /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = CF7221232075FC06002119F3 /* AppDelegate.swift */; };
+		CF2BA9B2208FFA6E0063792A /* CategoryCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 		CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221232075FC06002119F3 /* AppDelegate.swift */; };
-		CF7221262075FC06002119F3 /* QuestionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */; };
-		CF7221292075FC06002119F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7221272075FC06002119F3 /* Main.storyboard */; };
 		CF72212B2075FC06002119F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF72212A2075FC06002119F3 /* Assets.xcassets */; };
 		CF72212E2075FC06002119F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */; };
 		CF7221392075FC07002119F3 /* Trivia_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221382075FC07002119F3 /* Trivia_GameTests.swift */; };
 		CF7221442075FC07002119F3 /* Trivia_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7221432075FC07002119F3 /* Trivia_GameUITests.swift */; };
 		CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8CED05207D7E0800C8226D /* CNPPopupController.m */; };
-		EC4984822086A97C007C0445 /* AnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */; };
-		EC4984862086AB3D007C0445 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */; };
+		CFCD20B22093A33F0065E433 /* triviaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFCD20B02093A33F0065E433 /* triviaModel.xcdatamodeld */; };
+		CFFB9EE52098604700851344 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9EE42098604700851344 /* QuestionData.swift */; };
+		CFFB9EE72098615800851344 /* QuestionDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9EE62098615800851344 /* QuestionDataProperties.swift */; };
+		CFFB9EEC20986BCA00851344 /* AnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */; };
+		CFFD332F209B05C9007FBF3D /* LastAnswerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */; };
+		CFFD3330209B072C007FBF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7221272075FC06002119F3 /* Main.storyboard */; };
 		EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4984872086AE11007C0445 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF1F9AB320990B2E001C4A0A /* GeneralKnowledgeQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralKnowledgeQuestions.swift; sourceTree = "<group>"; };
+		CF1F9AB520990B87001C4A0A /* HistoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryQuestions.swift; sourceTree = "<group>"; };
+		CF1F9AB720990BBE001C4A0A /* LiteratureQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteratureQuestions.swift; sourceTree = "<group>"; };
+		CF1F9AB920990C20001C4A0A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CF1F9E922091B4E50019C19A /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
 		CF7221202075FC06002119F3 /* Trivia Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7221232075FC06002119F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreenViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +70,11 @@
 		CF8CED05207D7E0800C8226D /* CNPPopupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = SOURCE_ROOT; };
 		CF8CED07207D7E2A00C8226D /* CNPPopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		CF8CED08207D7F8700C8226D /* Trivia Game-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trivia Game-Bridging-Header.h"; sourceTree = "<group>"; };
-		EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerScreenViewController.swift; sourceTree = "<group>"; };
+		CFCD20B12093A33F0065E433 /* triviaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = triviaModel.xcdatamodel; sourceTree = "<group>"; };
+		CFFB9EE42098604700851344 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		CFFB9EE62098615800851344 /* QuestionDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataProperties.swift; sourceTree = "<group>"; };
+		CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAnswerScreenViewController.swift; sourceTree = "<group>"; };
+		EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerScreenViewController.swift; path = "Trivia Game/AnswerScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EC4984852086AB3D007C0445 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		EC4984872086AE11007C0445 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,11 +132,20 @@
 				CF7221232075FC06002119F3 /* AppDelegate.swift */,
 				CF7221252075FC06002119F3 /* QuestionScreenViewController.swift */,
 				EC4984812086A97C007C0445 /* AnswerScreenViewController.swift */,
+				CFFD332E209B05C9007FBF3D /* LastAnswerScreenViewController.swift */,
 				CF7221272075FC06002119F3 /* Main.storyboard */,
+				CFCD20B02093A33F0065E433 /* triviaModel.xcdatamodeld */,
 				CF72212A2075FC06002119F3 /* Assets.xcassets */,
 				CF72212C2075FC06002119F3 /* LaunchScreen.storyboard */,
+				CF1F9AB320990B2E001C4A0A /* GeneralKnowledgeQuestions.swift */,
+				CF1F9AB520990B87001C4A0A /* HistoryQuestions.swift */,
+				CF1F9AB720990BBE001C4A0A /* LiteratureQuestions.swift */,
 				CF72212F2075FC06002119F3 /* Info.plist */,
+				CFFB9EE42098604700851344 /* QuestionData.swift */,
+				CFFB9EE62098615800851344 /* QuestionDataProperties.swift */,
+				CF1F9AB920990C20001C4A0A /* Question.swift */,
 				CF8CED07207D7E2A00C8226D /* CNPPopupController.h */,
+				CF1F9E922091B4E50019C19A /* database.swift */,
 				CF8CED08207D7F8700C8226D /* Trivia Game-Bridging-Header.h */,
 				CF8CED05207D7E0800C8226D /* CNPPopupController.m */,
 			);
@@ -249,9 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2BA9B2208FFA6E0063792A /* CategoryCell.swift in Resources */,
+				CFFD3330209B072C007FBF3D /* Main.storyboard in Resources */,
+				CF2BA9B1208FFA6A0063792A /* AppDelegate.swift in Resources */,
 				CF72212E2075FC06002119F3 /* LaunchScreen.storyboard in Resources */,
 				CF72212B2075FC06002119F3 /* Assets.xcassets in Resources */,
-				CF7221292075FC06002119F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +307,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4984822086A97C007C0445 /* AnswerScreenViewController.swift in Sources */,
-				CF7221262075FC06002119F3 /* QuestionScreenViewController.swift in Sources */,
-				EC4984862086AB3D007C0445 /* CategoryTableViewController.swift in Sources */,
+				CF1F9AB420990B2E001C4A0A /* GeneralKnowledgeQuestions.swift in Sources */,
+				CFFB9EE72098615800851344 /* QuestionDataProperties.swift in Sources */,
+				CFFB9EE52098604700851344 /* QuestionData.swift in Sources */,
+				CFCD20B22093A33F0065E433 /* triviaModel.xcdatamodeld in Sources */,
+				CF1F9AC020990D7E001C4A0A /* QuestionScreenViewController.swift in Sources */,
+				CF1F9ABA20990C20001C4A0A /* Question.swift in Sources */,
+				CFFB9EEC20986BCA00851344 /* AnswerScreenViewController.swift in Sources */,
+				CF1F9ABD20990D68001C4A0A /* CategoryTableViewController.swift in Sources */,
 				CF7221242075FC06002119F3 /* AppDelegate.swift in Sources */,
 				CF8CED06207D7E0800C8226D /* CNPPopupController.m in Sources */,
+				CF1F9AB820990BBE001C4A0A /* LiteratureQuestions.swift in Sources */,
+				CF1F9E932091B4E50019C19A /* database.swift in Sources */,
+				CF1F9AB620990B87001C4A0A /* HistoryQuestions.swift in Sources */,
 				EC4984882086AE11007C0445 /* CategoryCell.swift in Sources */,
+				CFFD332F209B05C9007FBF3D /* LastAnswerScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +618,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFCD20B02093A33F0065E433 /* triviaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFCD20B12093A33F0065E433 /* triviaModel.xcdatamodel */,
+			);
+			currentVersion = CFCD20B12093A33F0065E433 /* triviaModel.xcdatamodel */;
+			path = triviaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CF7221182075FC06002119F3 /* Project object */;
 }
