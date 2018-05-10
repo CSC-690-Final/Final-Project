@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-HL-kby">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-HL-kby">
                                 <rect key="frame" x="136" y="28" width="143" height="44"/>
                                 <color key="backgroundColor" red="0.69205391839999997" green="0.69205391839999997" blue="0.69205391839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -446,7 +446,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SAV-Y8-iCr"/>
+        <segue reference="S3H-cr-Trg"/>
+        <segue reference="eBP-lS-Eyb"/>
         <segue reference="wdy-Wd-9Pj"/>
     </inferredMetricsTieBreakers>
 </document>

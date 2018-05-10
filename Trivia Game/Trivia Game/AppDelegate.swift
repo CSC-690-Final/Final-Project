@@ -46,9 +46,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
     
+    func isFirstLaunch() -> Bool {
+        let hasBeenLaunchedBeforeFlag = "hasBeenLaunchedBeforeFlag"
+        let isFirstLaunch = !UserDefaults.standard.bool(forKey: hasBeenLaunchedBeforeFlag)
+        if (isFirstLaunch) {
+            UserDefaults.standard.set(true, forKey: hasBeenLaunchedBeforeFlag)
+            UserDefaults.standard.synchronize()
+        }
+        return isFirstLaunch
+    }
+    
+    func getDocumentsDirectory()-> URL {
+        let paths = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     // MARK: - Core Data stack
     
-    lazy var persistentContainer: NSPersistentContainer = {
+   //no longer needed
+   /* lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -73,7 +90,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         return container
+    }()*/
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        print("No longer in use: ", getDocumentsDirectory())
+        let container = NSPersistentContainer(name: "triviaModel")
+        
+        let appName: String = "triviaModel"
+        var persistentStoreDescriptions: NSPersistentStoreDescription
+        
+        let storeUrl = self.getDocumentsDirectory().appendingPathComponent("triviaModel.sqlite")
+        
+        if isFirstLaunch() {
+            let seededDataUrl = Bundle.main.url(forResource: "triviaModel", withExtension: "sqlite")
+            try! FileManager.default.copyItem(at: seededDataUrl!, to: storeUrl)
+        }
+        
+        let description = NSPersistentStoreDescription()
+        description.shouldInferMappingModelAutomatically = true
+        description.shouldMigrateStoreAutomatically = true
+        description.url = storeUrl
+        
+        container.persistentStoreDescriptions = [description]
+        
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
     }()
+    
+    
     
     // MARK: - Core Data Saving support
     

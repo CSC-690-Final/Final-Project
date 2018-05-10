@@ -7,7 +7,6 @@
 //
 
 
-import UIKit
 import CoreData
 
 class dbViewController: UIViewController {
@@ -23,13 +22,14 @@ class dbViewController: UIViewController {
       
         let newQuestion = NSManagedObject(entity: questionEntity, insertInto: managedContext)
         
-        newQuestion.setValue("what color is the sun?", forKeyPath: "question")
-        newQuestion.setValue("red", forKeyPath: "a")
-        newQuestion.setValue("green", forKeyPath: "b")
-        newQuestion.setValue("blue", forKeyPath: "c")
-        newQuestion.setValue("yellow", forKeyPath: "d")
-        newQuestion.setValue("yellow", forKeyPath: "correctAnswer")
-        newQuestion.setValue( 1, forKeyPath: "id")
+        newQuestion.setValue("test", forKeyPath: "question")
+        newQuestion.setValue("test", forKeyPath: "a")
+        newQuestion.setValue("test", forKeyPath: "b")
+        newQuestion.setValue("test", forKeyPath: "c")
+        newQuestion.setValue("test", forKeyPath: "d")
+        newQuestion.setValue("test", forKeyPath: "correctAnswer")
+        newQuestion.setValue("Astronomy", forKeyPath: "category")
+        newQuestion.setValue( 0, forKeyPath: "id")
  
         do {
             try managedContext.save()
@@ -40,7 +40,7 @@ class dbViewController: UIViewController {
         //--//
         let questionFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Questions")
         questionFetch.fetchLimit = 1                  //"question = %@"
-        questionFetch.predicate = NSPredicate(format: "id = %d", 1)
+        questionFetch.predicate = NSPredicate(format: "id = %d", 0)
         let question = try! managedContext.fetch(questionFetch)
         
         let question1: Questions = question.first as! Questions
