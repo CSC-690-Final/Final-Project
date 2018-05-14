@@ -9,7 +9,16 @@
 import UIKit
 
 class CategoryTableViewController: UITableViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        //let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        //backgroundImage.image = UIImage(named: "trivia_background.jpg")
+        //backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        //self.view.insertSubview(backgroundImage, at: 0)
+        
+    }
     var categories: [String] = ["General Knowledge","History","Movies","Literature","Astronomy"]
     var selected: String?
     
@@ -28,10 +37,12 @@ class CategoryTableViewController: UITableViewController {
         return cell
     }
     
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selected = categories[indexPath.row]
         performSegue(withIdentifier: "categoryQuestion", sender: self)
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? QuestionViewController {

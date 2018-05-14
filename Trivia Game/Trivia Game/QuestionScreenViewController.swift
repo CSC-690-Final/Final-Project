@@ -22,6 +22,7 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var answerD: UIButton!
     
+    @IBOutlet weak var exitButton: UIButton!
     var category:String?
     var currentScore:Int = 0
     var submit = ""
@@ -33,8 +34,23 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
- 
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "trivia_background.jpg")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         
+        questionDisplay?.clipsToBounds = true
+        questionDisplay?.layer.cornerRadius = 20
+        answerA.clipsToBounds = true
+        answerA.layer.cornerRadius = 20
+        answerB.clipsToBounds = true
+        answerB.layer.cornerRadius = 20
+        answerC.clipsToBounds = true
+        answerC.layer.cornerRadius = 20
+        answerD.clipsToBounds = true
+        answerD.layer.cornerRadius = 20
+        exitButton.clipsToBounds = true
+        exitButton.layer.cornerRadius = 20
         //fetches the row from the Questions data model
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
