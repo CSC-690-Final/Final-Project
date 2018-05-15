@@ -280,13 +280,13 @@
         <scene sceneID="Vwg-aC-uJb">
             <objects>
                 <tableViewController id="1Ak-GJ-Gbi" customClass="CategoryTableViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uPf-9Y-eUS">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uPf-9Y-eUS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.56782678019999999" green="0.65364468090000005" blue="0.79913511270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.11080055680000001" green="0.55814564229999997" blue="0.97921496630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.11080055680000001" green="0.55814564229999997" blue="0.97921496630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableHeaderView" alpha="0.34999999999999998" contentMode="scaleToFill" id="uta-sc-t0u">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="uta-sc-t0u">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -294,9 +294,9 @@
                                     <rect key="frame" x="77" y="15" width="261" height="70"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <attributedString key="attributedText">
-                                        <fragment content="Trivia Game">
+                                        <fragment content="Categories">
                                             <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="41" name="HelveticaNeue-MediumItalic"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -305,19 +305,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.11080055680000001" green="0.55814564229999997" blue="0.97921496630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="VtE-mO-kAv">
-                            <rect key="frame" x="0.0" y="172" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="UFZ-MK-5LB" userLabel="Category Cell" customClass="CategoryCell" customModule="Trivia_Game" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="categoryCell" id="UFZ-MK-5LB" userLabel="Category Cell" customClass="CategoryCell" customModule="Trivia_Game" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="128" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UFZ-MK-5LB" id="YTt-de-beB" customClass="CategoryCell" customModule="Trivia_Game" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -340,7 +334,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="1217" y="664"/>
+            <point key="canvasLocation" x="1215.9420289855072" y="663.58695652173913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="adN-yy-Zn5">
