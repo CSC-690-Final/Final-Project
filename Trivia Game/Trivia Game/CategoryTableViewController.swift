@@ -21,7 +21,7 @@ class CategoryTableViewController: UITableViewController {
         //self.view.insertSubview(backgroundImage, at: 0)
         tableView.backgroundView = UIImageView(image: UIImage(named: "trivia_background.jpg"))
     }
-    var categories: [String] = ["General Knowledge","History","Movies","Literature","Astronomy"]
+    var categories: [String] = ["General Knowledge","History","Movies","Literature","Astronomy", "Culture"]
     var selected: String?
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
